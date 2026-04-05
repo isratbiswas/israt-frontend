@@ -1,5 +1,6 @@
+import Footer from "@/components/shered/Footer";
 import Navbar from "@/components/shered/Navbar";
 
 export default function Home() {
-  return <Navbar />;
+  return <main className="bg-background text-foreground min-h-screen"></main>;
 }
