@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="flex items-center gap-3 min-[512px]:gap-6">
         <div className="cursor-pointer hover:opacity-80 transition-opacity shrink-0">
           <Image
-            src="/assests/Toggle.png"
+            src="/assets/Toggle.png"
             width={55}
             height={28}
             alt="theme toggle"
