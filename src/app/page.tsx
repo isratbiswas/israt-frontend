@@ -1,3 +1,4 @@
+import Curriculum from "@/components/modules/Curriculum";
 import DistractionSection from "@/components/modules/DistractionSection";
 import HeroSection from "@/components/modules/HeroSection";
 import IntroducingSection from "@/components/modules/IntroducingSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <HeroSection />
       <DistractionSection />
       <Work />
+      <Curriculum />
       <Testimonials />
       <IntroducingSection />
     </main>
