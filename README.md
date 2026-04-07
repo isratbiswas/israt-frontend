@@ -1,7 +1,9 @@
 🚀 WA Landing Page
+Live Link: <a href="https://walandingpage.vercel.app/">WA_LANDING_PAGE</a>
+
 A modern, responsive landing page built using Next.js (App Router), TypeScript, and Tailwind CSS, react icons . This project follows a scalable and modular architecture, making it easy to maintain and extend.
 <br/>
-Live Link: <a href="https://walandingpage.vercel.app/">WA_LANDING_PAGE</a>
+
 📌 Features
 ⚡ Built with Next.js App Router
 🎨 Styled using Tailwind CSS
