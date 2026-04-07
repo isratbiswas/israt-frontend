@@ -9,27 +9,28 @@ Live Link: <a href="https://walandingpage.vercel.app/">WA_LANDING_PAGE</a>
 🔄 Reusable UI components
 🚀 Optimized for performance and SEO
 🏗️ Project Structure
+
 WA_LANDING_PAGE/
 ├── src/
-│   ├── app/                
-│   │   ├── favicon.ico
-│   │   ├── globals.css
-│   │   ├── layout.tsx
-│   │   └── page.tsx
-│   ├── components/
-│   │   ├── layout/         
-│   │   │   └── InitialLoader.tsx
-│   │   ├── modules/       
-│   │   │   ├── Curriculum.tsx
-│   │   │   ├── DistractionSection.tsx
-│   │   │   ├── HeroSection.tsx
-│   │   │   ├── IntroducingSection.tsx
-│   │   │   ├── Testimonials.tsx
-│   │   │   └── Work.tsx
-│   │   └── shared/      
-│   │       ├── Footer.tsx
-│   │       └── Navbar.tsx
-├── public/               
+│ ├── app/  
+│ │ ├── favicon.ico
+│ │ ├── globals.css
+│ │ ├── layout.tsx
+│ │ └── page.tsx
+│ ├── components/
+│ │ ├── layout/  
+│ │ │ └── InitialLoader.tsx
+│ │ ├── modules/  
+│ │ │ ├── Curriculum.tsx
+│ │ │ ├── DistractionSection.tsx
+│ │ │ ├── HeroSection.tsx
+│ │ │ ├── IntroducingSection.tsx
+│ │ │ ├── Testimonials.tsx
+│ │ │ └── Work.tsx
+│ │ └── shared/  
+│ │ ├── Footer.tsx
+│ │ └── Navbar.tsx
+├── public/  
 ├── config files...
 
 🧑‍💻 Tech Stack
@@ -47,7 +48,9 @@ cd wa-landing-page
 Install dependencies:
 
 npm install
+
 # or
+
 yarn install
 ▶️ Running the Project
 
