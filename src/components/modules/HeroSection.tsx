@@ -1,19 +1,42 @@
 import Image from "next/image";
-import { Play } from "lucide-react"; // Optional: install lucide-react for the icon
+import { Play } from "lucide-react";
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-black text-white overflow-hidden flex flex-col items-center">
-      {/* Background Gradient Effect */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-transparent to-transparent pointer-events-none" />
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background: `
 
-      {/* --- Header/Hero Content --- */}
+            linear-gradient(to bottom, 
+              black 0%, 
+              black 10%, 
+              rgba(37, 99, 235, 0.15) 70%, 
+              rgba(37, 99, 235, 0.3) 100%
+            ),
+        
+            repeating-linear-gradient(
+              0deg,
+              transparent,
+              transparent 2px,
+              rgba(37, 99, 235, 0.1) 3px,
+              transparent 4px
+            )
+          `,
+        }}
+      />
+
       <div className="relative z-10 pt-20 px-6 text-center max-w-4xl mx-auto">
-        {/* Countdown Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-8 text-[13px] font-medium border rounded-full border-white/10 bg-white/5 backdrop-blur-md">
-          <span className="w-1.5 h-1.5 bg-blue-500 rounded-full shadow-[0_0_8px_#3b82f6]"></span>
-          <span className="text-white/80">
-            30% off until 4d : 2h : 41m : 17s
+        <div
+          className="inline-flex lg:mt-32 mt-24  items-center gap-2 px-5 py-2.5 mb-8 text-[13px] font-medium border rounded-2xl border-blue-800/10 bg-[#121418] backdrop-blur-md
+shadow-[-2px_-2px_6px_rgba(59,130,246,0.25),3px_3px_8px_rgba(59,130,246,0.2)]"
+        >
+          <span className="w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_6px_#3b82f6]"></span>
+
+          <span className="whitespace-nowrap font-base text-normal">
+            30% off until
+            <span className="text-white"> 4d : 2h : 41m : 17s</span>
           </span>
         </div>
 
@@ -26,7 +49,6 @@ const HeroSection = () => {
           for deep work, and boost productivity effortlessly.
         </p>
 
-        {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <button className="w-full sm:w-auto px-8 py-3.5 bg-blue-600 hover:bg-blue-500 rounded-xl font-medium transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
             Enroll now
@@ -37,42 +59,25 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* --- Video/Visual Section --- */}
-      <div className="relative w-full max-w-6xl px-4 md:px-10">
-        {/* The Dotted/Textured Background Line */}
-        <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-
-        {/* Video Thumbnail Container */}
-        <div className="relative mt-12 group cursor-pointer">
-          {/* Blue Border Frame */}
-          <div className="absolute -inset-1 rounded-[2rem] border-2 border-blue-500/50 blur-[2px] opacity-50" />
-
-          <div className="relative aspect-video rounded-[1.8rem] overflow-hidden border border-white/10 shadow-2xl">
+      <div className="relative z-10 w-full max-w-6xl px-4 md:px-10 pb-20">
+        <div className="relative group cursor-pointer">
+          <div className="absolute -inset-1 rounded-[2rem] bg-blue-500/20 blur-xl group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="relative aspect-video rounded-[1.8rem] overflow-hidden border border-blue-500/30 shadow-2xl">
             <Image
-              src="/assets/hero.png"
+              src="/assets/hero1.png"
               alt="Hero Video Thumbnail"
               fill
               className="object-cover"
               priority
             />
-
-            {/* Play Button Overlay */}
-            <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/40 transition-all duration-300">
-              <div className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center bg-white rounded-full shadow-xl transition-transform group-hover:scale-110">
-                <Play className="w-6 h-6 md:w-8 md:h-8 text-blue-600 fill-current ml-1" />
+            <div className="absolute inset-0 flex items-center justify-center group-hover:bg-black/30 transition-all duration-300">
+              <div className="group relative cursor-pointer">
+                <div className="relative flex h-16 w-16 items-center justify-center rounded-full bg-white md:h-20 md:w-20 ring-[6px] ring-white/40 shadow-[0_8px_30px_rgba(0,0,0,0.15)] transition-all duration-300 ease-out group-hover:scale-110 group-hover:shadow-[0_15px_45px_rgba(0,0,0,0.2)]">
+                  <Play className="ml-1 h-6 w-6 fill-current text-blue-600 md:h-8 md:w-8 transition-transform group-hover:scale-105" />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Scanning Line Texture (Bottom) */}
-        <div className="mt-8 w-full h-24 relative opacity-40">
-          <Image
-            src="/assets/texture.png"
-            alt="texture background"
-            fill
-            className="object-contain"
-          />
         </div>
       </div>
     </section>

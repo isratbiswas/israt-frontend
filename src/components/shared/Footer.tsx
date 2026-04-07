@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex flex-col lg:flex-row justify-between items-center gap-12 mb-16 lg:mb-24 text-center lg:text-left">
         <div className="max-w-md">
           <h2 className="text-white font-semibold tracking-tight leading-tight text-3xl sm:text-4xl lg:text-5xl">
-            The Deep Work Blueprint
+            The Deep <br /> Work Blueprint
           </h2>
           <p className="text-gray-400 mt-4 text-base sm:text-lg">
             Master Focus & Get More <br className="lg:hidden" /> Done in Less
@@ -19,7 +19,6 @@ const Footer = () => {
 
         <div className="bg-[#2563EB] p-8 rounded-[2.5rem] relative overflow-hidden group cursor-pointer transition-all hover:scale-[1.02] active:scale-[0.98] w-full max-w-[420px] lg:w-[450px]">
           <div className="flex justify-between items-start mb-14">
-            {/* Avatar Stack */}
             <div className="flex -space-x-3">
               {[0, 1, 2].map((i) => (
                 <div
@@ -68,7 +67,7 @@ const Footer = () => {
         </ul>
 
         {/* Copyright */}
-        <div className="text-sm text-gray-500 font-light order-2 lg:order-1">
+        <div className="text-sm text-gray-200 font-light order-2 lg:order-1">
           © Copyright 2024, All Rights Reserved
         </div>
       </div>
