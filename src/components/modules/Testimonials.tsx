@@ -132,7 +132,6 @@ const Testimonials = () => {
               </div>
             </div>
 
-            {/* Repeated Cards */}
             {[3, 4, 5].map((i) => (
               <div key={i} className={slideResponsiveClass}>
                 <div className="group p-8 rounded-[2rem] bg-[#0A0A0A] border border-blue-400/20 flex flex-col justify-between min-h-[400px] h-full hover:border-blue-500/30 transition-all duration-500">

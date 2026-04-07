@@ -55,7 +55,6 @@ const Navbar = () => {
           Enroll now
         </button>
 
-        {/* Hamburger Menu Icon (Visible below 981px) */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="min-[981px]:hidden flex flex-col gap-1.5 ml-2"

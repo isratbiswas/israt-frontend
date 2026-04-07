@@ -1,5 +1,6 @@
 🚀 WA Landing Page
-A modern, responsive landing page built using Next.js (App Router), TypeScript, and Tailwind CSS. This project follows a scalable and modular architecture, making it easy to maintain and extend.
+A modern, responsive landing page built using Next.js (App Router), TypeScript, and Tailwind CSS, react icons . This project follows a scalable and modular architecture, making it easy to maintain and extend.
+<br/>
 Live Link: <a href="https://walandingpage.vercel.app/">WA_LANDING_PAGE</a>
 📌 Features
 ⚡ Built with Next.js App Router
@@ -42,7 +43,7 @@ Build Tooling: PostCSS
 
 ⚙️ Installation
 Clone the repository:
-git clone https://github.com/your-username/wa-landing-page.git
+git clone https://github.com/isratbiswas/wa-landing-page.git
 cd wa-landing-page
 
 Install dependencies:

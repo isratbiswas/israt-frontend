@@ -69,7 +69,7 @@ const IntroducingSection = () => {
                 <div className="bg-blue-500/10 p-2 rounded-full border border-blue-500/20">
                   <BsFillPatchCheckFill className="text-white text-sm" />
                 </div>
-                {/* < className="text-white/80 mt-1 shrink-0" /> */}
+
                 <span>{feature}</span>
               </div>
             ))}

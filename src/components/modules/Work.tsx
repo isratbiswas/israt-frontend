@@ -1,4 +1,5 @@
 "use client";
+
 import { HiOutlineLightBulb } from "react-icons/hi";
 import { BiBrain } from "react-icons/bi";
 import { BsPatchCheckFill } from "react-icons/bs";
@@ -25,13 +26,10 @@ const steps = [
 
 const Work = () => {
   return (
-    <section className="bg-black text-white py-20 px-6 overflow-hidden min-h-screen mt-16 lg:mt-32 ">
-      <div className="max-w-sm mx-auto mb-28 sm:12">
+    <section className="bg-black text-white py-20 px-6 overflow-hidden min-h-screen mt-16 lg:mt-32">
+      <div className="max-w-sm mx-auto mb-28 sm:mb-12">
         <div className="flex justify-center mb-8">
-          <div
-            className="inline-flex items-center gap-3 px-5 py-2 mb-6 text-xs font-medium border rounded-2xl border-blue-400/20 bg-[#171B21] text-white
-shadow-[-6px_-6px_12px_rgba(59,130,246,0.25),6px_6px_12px_rgba(0,0,0,0.6)]"
-          >
+          <div className="inline-flex items-center gap-3 px-5 py-2 mb-6 text-xs font-medium border rounded-2xl border-blue-400/20 bg-[#171B21] text-white shadow-[-6px_-6px_12px_rgba(59,130,246,0.25),6px_6px_12px_rgba(0,0,0,0.6)]">
             <span className="w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_8px_#3b82f6]"></span>
 
             <span className="whitespace-nowrap font-normal text-sm md:text-lg leading-relaxed">
@@ -45,7 +43,7 @@ shadow-[-6px_-6px_12px_rgba(59,130,246,0.25),6px_6px_12px_rgba(0,0,0,0.6)]"
         </h2>
       </div>
 
-      <div className="max-w-sm mx-auto relative ">
+      <div className="max-w-sm mx-auto relative">
         <div className="absolute left-[7px] top-2 bottom-2 w-[1px] bg-gradient-to-b from-blue-600 via-blue-500/30 to-transparent" />
 
         <div className="flex flex-col">
@@ -58,11 +56,8 @@ shadow-[-6px_-6px_12px_rgba(59,130,246,0.25),6px_6px_12px_rgba(0,0,0,0.6)]"
                 <div className="w-[15px] h-[15px] rounded-full bg-blue-600 shadow-[0_0_10px_2px_rgba(59,130,246,0.5)] flex items-center justify-center"></div>
               </div>
 
-              <div className="flex-1 rounded-2xl px-1 py-1 group-hover:border-blue-500/20  transition-all duration-300">
-                <div
-                  className="w-10 h-10 rounded-full bg-[#171B21] border border-blue-500/20 flex items-center justify-center mb-4 group-hover:border-blue-500/30 transition-colors duration-300
-                 shadow-[0_0_12px_rgba(59,130,246,0.5)]"
-                >
+              <div className="flex-1 rounded-2xl px-1 py-1 group-hover:border-blue-500/20 transition-all duration-300">
+                <div className="w-10 h-10 rounded-full bg-[#171B21] border border-blue-500/20 flex items-center justify-center mb-4 group-hover:border-blue-500/30 transition-colors duration-300 shadow-[0_0_12px_rgba(59,130,246,0.5)]">
                   {step.icon}
                 </div>
 

@@ -1,9 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import { Play, Lock, CheckCircle2 } from "lucide-react";
-import { TiArrowSortedUp } from "react-icons/ti";
-import { TiArrowSortedDown } from "react-icons/ti";
+import { Play } from "lucide-react";
+import { TiArrowSortedUp, TiArrowSortedDown } from "react-icons/ti";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 
 const modules = [
@@ -61,13 +60,13 @@ const Curriculum = () => {
     <section className="bg-black text-white py-24 px-6 min-h-screen lg:mt-32 mt-16">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center gap-3 px-4 py-1.5 mb-6 text-[11px]  tracking-widest  border rounded-2xl border-white/10 bg-[#0A0A0A] text-white">
+          <div className="inline-flex items-center gap-3 px-4 py-1.5 mb-6 text-[11px] tracking-widest border rounded-2xl border-white/10 bg-[#0A0A0A] text-white">
             <span className="w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_8px_#3b82f6]" />
-
             <span className="whitespace-nowrap font-normal text-sm md:text-lg leading-relaxed">
               Course Curriculum
             </span>
           </div>
+
           <h2 className="text-3xl md:text-[42px] font-medium tracking-tight leading-tight mt-1">
             Mastering Deep Work: A Structured <br className="hidden md:block" />
             Path to Peak Productivity
@@ -79,8 +78,7 @@ const Curriculum = () => {
             {modules.map((module) => (
               <div
                 key={module.id}
-                className="pb-4 last:border-0 border-b border-transparent 
-  [border-image:linear-gradient(to_right,rgba(59,130,246,0.1),rgba(37,99,235,1),rgba(59,130,246,0.1))_1]"
+                className="pb-4 last:border-0 border-b border-transparent [border-image:linear-gradient(to_right,rgba(59,130,246,0.1),rgba(37,99,235,1),rgba(59,130,246,0.1))_1]"
               >
                 <button
                   onClick={() =>
@@ -96,6 +94,7 @@ const Curriculum = () => {
                       {module.duration}
                     </p>
                   </div>
+
                   {openModule === module.id ? (
                     <TiArrowSortedUp className="w-5 h-5 text-white" />
                   ) : (
@@ -113,25 +112,31 @@ const Curriculum = () => {
                         <div className="flex items-center gap-4">
                           {lesson.isPreview ? (
                             <div className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center border border-white/10 group-hover:border-blue-500/50 transition-colors">
-                              <Play className="w-3.5 h-3.5 text-blue-700 fill-blue-700 " />
+                              <Play className="w-3.5 h-3.5 text-blue-700 fill-blue-700" />
                             </div>
                           ) : (
                             <div className="w-8 h-8 rounded-full bg-[#FFFFFF4D] flex items-center justify-center">
-                              <Play className="w-3.5  h-3.5 text-[#171B21] fill-[#171B21]" />
+                              <Play className="w-3.5 h-3.5 text-[#171B21] fill-[#171B21]" />
                             </div>
                           )}
 
                           <span
-                            className={`text-sm ${lesson.isPreview ? "text-white/90" : "text-white/40"}`}
+                            className={`text-sm ${
+                              lesson.isPreview
+                                ? "text-white/90"
+                                : "text-white/40"
+                            }`}
                           >
                             {lesson.title}
                           </span>
+
                           {lesson.isPreview && (
-                            <span className="text-[10px]  tracking-tighter bg-white/10 px-3 py-1 rounded-full text-blue-400 font-normal">
+                            <span className="text-[10px] tracking-tighter bg-white/10 px-3 py-1 rounded-full text-blue-400 font-normal">
                               Preview
                             </span>
                           )}
                         </div>
+
                         <span className="text-xs text-white/30 font-mono">
                           {lesson.time}
                         </span>

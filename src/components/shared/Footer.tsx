@@ -66,7 +66,6 @@ const Footer = () => {
           </li>
         </ul>
 
-        {/* Copyright */}
         <div className="text-sm text-gray-200 font-light order-2 lg:order-1">
           © Copyright 2024, All Rights Reserved
         </div>
